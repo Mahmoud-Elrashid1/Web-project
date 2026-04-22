@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up page</title>
+    <link rel="stylesheet" href="../Css/campusevent.css">
+    <link rel="stylesheet" href="../Css/sign-up.css">
+</head>
+<body>
+     <header> <h1> Campus Event Hub</h1>
+   <nav>
+      <ul>
+       <li id="home"> <a href="campusevent.html">Home</a> </li>   
+       <li id="event"> <a href="events.html"> Events </a> </li>  
+       <li id="create"><a href="createEvent.html">Create Event </a> </li>    
+       <li id="admin"> <a href="adminlogin.html"> Admin</a> </li>
+       <li id="login"> <a href="login.html"> login </a> </li>
+       <li id="sign-up"> <a href="sign-up.html">sign-up </a></li> 
+   
+      </ul>
+   </nav>
+
+</header>
+<main>
+    <section class="signup-page">
+
+<div class="signup-form">
+
+<h2>Create an Account</h2>
+
+<form action="#" method="post">
+
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" placeholder="First name + last name" >
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="Ceo56@gmail.com" >
+
+<label for="password">Password</label>
+<input type="password" id="password" name="password" >
+
+<label for="confirm-password">Confirm Password</label>
+<input type="password" id="confirm-password" name="confirm-password" >
+
+<label>User Role</label>
+
+<div class="role-options">
+<label>
+<input type="radio" name="role" value="student"> Normal User
+</label>
+
+<label>
+<input type="radio" name="role" value="admin"> Admin
+</label>
+</div>
+
+<button type="submit">Create Account</button>
+
+</form>
+
+<p>
+Already have an account?
+<a href="login.html">Login</a>
+</p>
+
+</div>
+
+
+</section>
+</main>
+  
+<footer> <p>© 2026 Campus Event Hub</p> </footer>
+<script src="../Js/sign-up.js"></script>
+</body>
+</html>  

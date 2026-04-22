@@ -1,0 +1,103 @@
+/* ================= SUPPORT PAGE ================= */
+
+main{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:40px 20px;
+color:#e0e1dd;
+}
+
+/* section titles */
+
+main h3{
+margin-top:20px;
+margin-bottom:15px;
+}
+
+/* FAQ container */
+
+.faq-section{
+background:rgba(27,38,59,0.9);
+backdrop-filter:blur(10px);
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+border:1px solid rgba(255,255,255,0.1);
+width:500px;
+margin-bottom:30px;
+}
+
+/* FAQ questions */
+
+.faq-section strong{
+color:#e0e1dd;
+}
+
+/* support form */
+
+main form{
+background:rgba(27,38,59,0.9);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+border:1px solid rgba(255,255,255,0.1);
+
+display:flex;
+flex-direction:column;
+gap:12px;
+
+width:350px;
+}
+
+/* labels */
+
+main form label{
+font-size:14px;
+color:#e0e1dd;
+}
+
+/* inputs */
+
+main form input,
+main form textarea{
+padding:10px;
+border-radius:6px;
+border:none;
+outline:none;
+background:#e0e1dd;
+color:#1b263b;
+}
+
+/* textarea */
+
+main form textarea{
+min-height:100px;
+resize:vertical;
+}
+
+/* focus effect */
+
+main form input:focus,
+main form textarea:focus{
+box-shadow:0 0 0 2px #778da9;
+}
+
+/* submit button */
+
+main form button{
+margin-top:10px;
+padding:10px;
+border:none;
+border-radius:6px;
+background:#415a77;
+color:#e0e1dd;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+main form button:hover{
+background:#778da9;
+}

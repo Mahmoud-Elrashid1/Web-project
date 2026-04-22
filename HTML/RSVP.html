@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RSVP</title>
+<link rel="stylesheet" href="../Css/campusevent.css">
+<link rel="stylesheet" href="../Css/RSVP.css">
+</head>
+
+<body>
+
+<header>
+<h1>Campus Event Hub</h1>
+  <nav>
+        <ul>
+        <li class="home"> <a href="campusevent.html" >Home</a> </li>   
+        <li class="event"> <a href="events.html"> Events </a> </li>  
+        <li class="create"><a href="createEvent.html">Create Event </a> </li>    
+        <li class="admin"> <a href="adminlogin.html"> Admin</a> </li>
+        <li class="login"> <a href="login.html"> login </a> </li>
+        <li class="sign-up"> <a href="sign-up.html">sign up </a></li> 
+    
+        </ul>
+       
+    </nav>
+</header>
+
+<main>
+
+<section class="rsvp-page">
+
+<h2>Event RSVP</h2>
+
+<p>Register to attend this event.</p>
+
+<form class="rsvp-form">
+
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" placeholder="Enter your name">
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="Enter your email">
+
+<label for="event">Event</label>
+<select id="event" name="event">
+
+<option>AI & Machine Learning Seminar</option>
+<option>Photography Workshop</option>
+<option>Startup Networking Night</option>
+
+</select>
+
+<label for="guests">Number of Guests</label>
+<input type="number" id="guests" name="guests" min="0" max="5">
+
+<button type="submit">Confirm RSVP</button>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Campus Event Hub</p>
+</footer>
+<script src="../Js/RSVP.js"></script>
+</body>
+</html>

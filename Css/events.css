@@ -1,0 +1,139 @@
+/* ---------------- EVENTS PAGE ---------------- */
+
+/* search bar */
+
+.searchbar{
+display:flex;
+align-items:center;
+gap:10px;
+margin-left:auto;
+}
+
+.searchbar label{
+color:#e0e1dd;
+font-size:14px;
+}
+
+.searchbar input{
+padding:8px 10px;
+border-radius:6px;
+border:none;
+outline:none;
+background:#e0e1dd;
+color:#1b263b;
+}
+
+.searchbar button{
+padding:8px 14px;
+border:none;
+border-radius:6px;
+background:#415a77;
+color:#e0e1dd;
+cursor:pointer;
+transition:0.3s;
+}
+
+.searchbar button:hover{
+background:#778da9;
+}
+
+/* events container */
+
+.event-container{
+max-width:1200px;
+margin:auto;
+text-align:center;
+color: #778da9;
+}
+.event-container p
+{
+    color: #e0e1dd;
+}
+/* filters */
+
+.event-filters{
+margin:25px 0;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+
+
+/* events grid */
+
+.events-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:30px;
+}
+
+/* event cards (reuse homepage style but ensure consistency) */
+
+.eventcard{
+background:#e0e1dd;
+border-radius:12px;
+box-shadow:0 6px 14px rgba(0,0,0,0.1);
+padding:20px;
+transition:transform 0.25s ease, box-shadow 0.25s ease;
+text-align:left;
+}
+.event-badge{
+position:absolute;
+background:#1b263b;
+color:#e0e1dd;
+padding:6px 10px;
+border-radius:6px;
+text-align:center;
+font-size:12px;
+}
+
+.event-badge strong{
+display:block;
+font-size:16px;
+}
+
+.eventcard:hover{
+transform:translateY(-8px);
+box-shadow:0 12px 22px rgba(0,0,0,0.2);
+}
+
+.eventcard img{
+width:100%;
+border-radius:10px;
+margin-bottom:12px;
+}
+
+.eventcard h3{
+margin-bottom:8px;
+color:#1b263b;
+}
+
+.eventcard p{
+margin-bottom:6px;
+color:#1b263b;
+}
+
+/* RSVP button already exists but ensure spacing */
+
+.rsvp-btn{
+display:inline-block;
+margin-top:12px;
+padding:8px 16px;
+background:#1b263b;
+color:#e0e1dd;
+border-radius:6px;
+text-decoration:none;
+font-weight:500;
+}
+
+.rsvp-btn:hover{
+background:#415a77;
+}
+.filter-btn.active {
+    background-color: #007BFF; /* bright blue or your theme color */
+    color: white;
+    border: none;
+}

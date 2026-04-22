@@ -1,0 +1,113 @@
+/* ---------------- CREATE EVENT PAGE ---------------- */
+
+main{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:40px 20px;
+}
+
+/* page title */
+
+main h2{
+color:#e0e1dd;
+margin-bottom:10px;
+}
+
+main p{
+color:#e0e1dd;
+margin-bottom:30px;
+text-align:center;
+max-width:600px;
+}
+
+/* form card */
+
+main form{
+background:rgba(27,38,59,0.85);
+backdrop-filter:blur(10px);
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+border:1px solid rgba(255,255,255,0.1);
+width:400px;
+
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+/* labels */
+
+main form label{
+color:#e0e1dd;
+font-size:14px;
+font-weight:500;
+}
+
+/* inputs */
+
+main form input,
+main form select,
+main form textarea{
+padding:10px;
+border-radius:6px;
+border:none;
+outline:none;
+background:#e0e1dd;
+color:#1b263b;
+font-size:14px;
+}
+
+/* textarea height */
+
+main form textarea{
+min-height:100px;
+resize:vertical;
+}
+
+/* focus effect */
+
+main form input:focus,
+main form select:focus,
+main form textarea:focus{
+box-shadow:0 0 0 2px #778da9;
+}
+
+/* submit button */
+
+main form button{
+margin-top:10px;
+padding:12px;
+border:none;
+border-radius:6px;
+background:#415a77;
+color:#e0e1dd;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+main form button:hover{
+background:#778da9;
+}
+
+
+
+/* after Js*/
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+input, textarea, select {
+  border: 2px solid #ccc;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #999;
+}
+
+

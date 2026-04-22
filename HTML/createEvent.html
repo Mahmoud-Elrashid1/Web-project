@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event</title>
+    <link rel="stylesheet" href="../Css/campusevent.css">
+    <link rel="stylesheet" href="../Css/createevents.css">
+</head>
+<body>
+    <header> <h1>Campus Event Hub</h1>
+    <nav>
+        <ul>
+        <li class="home"> <a href="campusevent.html" >Home</a> </li>   
+        <li class="event"> <a href="events.html"> Events </a> </li>  
+        <li class="create"><a href="createEvent.html">Create Event </a> </li>    
+        <li class="admin"> <a href="adminlogin.html"> Admin</a> </li>
+        <li class="login"> <a href="login.html"> login </a> </li>
+        <li class="sign-up"> <a href="sign-up.html">sign up </a></li> 
+    
+        </ul>
+       
+    </nav>
+    
+    </header>
+    <main>
+    <h2>Create New Event</h2>
+<p>Submit your campus event for admin review. Once approved, it will appear on the events page.</p>
+<form id="eventForm">
+
+<label for="title">Event Title</label>
+<input type="text" id="title" name="title" placeholder="Enter event title" required>
+<small class="error"></small>
+
+<label for="organizer">Organizer</label>
+<input type="text" id="organizer" name="organizer" placeholder="e.g. CS Department" required>
+<small class="error"></small>
+
+<label for="category">Category</label>
+<select id="category" name="category">
+<option value="seminar">Seminar</option>
+<option value="workshop">Workshop</option>
+<option value="meetup">Meetup</option>
+</select>
+
+<label for="image">Event Image</label>
+<input type="file" id="image" name="image" accept="image/*">
+<small class="error"></small>
+
+<label for="date">Event Date</label>
+<input type="date" id="date" name="date" placeholder="01/03/2005" required>
+<small class="error"></small>
+
+<label for="location">Location</label>
+<input type="text" id="location" name="location" placeholder="e.g. Science Hall" required>
+<small class="error"></small>
+
+<label for="description">Description</label>
+<textarea id="description" name="description"></textarea>
+<small class="error"></small>
+
+<button type="submit">Submit Event For Review</button>
+
+</form>
+</main>
+<footer>
+        <p>© 2026 Campus Event Hub</p>
+</footer>
+
+<script src="../Js/createevent.js"></script>
+</body>
+</html>

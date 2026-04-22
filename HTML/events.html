@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/campusevent.css">
+    <link rel="stylesheet" href="../Css/events.css">
+    <title>Events</title>
+</head>
+<body>
+        
+<header> <h1>Campus Event Hub</h1>
+   <nav>
+      <ul>
+       <li id="home"> <a href="campusevent.html">Home</a> </li>   
+       <li id="event"> <a href="events.html"> Events </a> </li>  
+       <li id="Create"><a href="createEvent.html">Create Event </a> </li>    
+       <li id="admin"> <a href="adminlogin.html"> Admin</a> </li>
+       <li id="login"> <a href="login.html"> login </a> </li>
+       <li id="sign-up"> <a href="sign-up.html">sign up </a></li> 
+   
+      </ul>
+   </nav>
+     <form  class="searchbar">
+  <label for="search">Search Events:</label>
+  <input type="text" id="search" name="search" placeholder="Search events...">
+  <button type="submit">Search</button>
+</form>
+</header>
+
+<main>
+
+
+ <section class="upcomingevents">
+    <div class="event-container">
+    <h2>Upcoming Events</h2>
+<p>Discover workshops, seminars, and networking opportunities happening on campus.</p>
+
+<div class="event-filters">
+  <button class="filter-btn" data-category="all">All</button>
+  <button class="filter-btn" data-category="seminar">Seminars</button>
+  <button class="filter-btn" data-category="workshop">Workshops</button>
+  <button class="filter-btn" data-category="meetup">Meetups</button>
+</div>
+
+<div class="events-grid">
+    <article class="eventcard" data-category="seminar" >
+        <div class="event-badge">
+<span>APR</span>
+<strong>20</strong>
+</div>
+        <img src="../images/images.jpg" alt="AI & Machine learning Seminar image">
+        <h3>AI & Machine learning Seminar</h3>
+     <p class="date">Date: <time datetime="2026-04-20">April 20, 2026</time></p>
+        <p class="organizer">CS Department</p>
+        <p class="location">Science Hall</p>
+<a href="RSVP.html" class="rsvp-btn">RSVP</a>
+        
+    </article>
+
+     <article class="eventcard" data-category="workshop">
+        <div class="event-badge">
+<span>APR</span>
+<strong>20</strong>
+</div>
+        <img src="../images/images.jpg" alt="Photography Workshop image">
+        <h3>Photography Workshop</h3>
+     <p class="date">Date: <time datetime="2026-04-20">April 20, 2026</time></p>
+        <p class="organizer">Art & Media Club</p>
+        <p class ="location">Room 204</p>
+<a href="RSVP.html" class="rsvp-btn">RSVP</a>
+        
+    </article>
+
+     <article class="eventcard" data-category="meetup">
+        <div class="event-badge">
+<span>APR</span>
+<strong>20</strong>
+</div>
+        <img src="../images/image.webp" alt="Startup-Network-Night">
+        <h3>Startup Networking Night</h3>
+<p class="date">Date: <time datetime="2026-04-20">April 20, 2026</time></p>
+        <p class="organizer">Entrepreneur Club</p>
+        <p class="location">Student Hall</p>
+<a href="RSVP.html" class="rsvp-btn">RSVP</a>
+        
+    </article>
+    </div>
+    </div>
+   </section>
+   
+</main>
+
+<footer>
+    
+        <div >
+        <h3>Your Account</h3>
+        <ul>
+            <li><a href="sign-up.html">Sign-up</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+
+    </div>
+
+    <div>
+        <h3>About Us</h3>
+        <ul>
+        <li> <a href="about.html"> About</a></li>
+            <li><a href="blog.html"> Blog</a></li>
+        </ul>
+        </div>
+    <div>
+
+        <h3>Contact Us</h3>
+    <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">X</a></li>
+        <li><a href="#">Youtube</a></li>
+    </ul>
+    <p>© 2026 Campus Event Hub</p>
+    </div>
+
+    </footer>
+<script src="../Js/events.js"></script>
+
+
+</body>
+</html>

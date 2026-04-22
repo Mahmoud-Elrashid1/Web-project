@@ -1,0 +1,108 @@
+/* ---------------- SIGNUP PAGE ---------------- */
+
+.signup-page{
+min-height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px 20px;
+}
+
+/* signup card */
+
+.signup-form{
+background:rgba(27,38,59,0.85);
+backdrop-filter:blur(10px);
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+width:360px;
+border:1px solid rgba(255,255,255,0.1);
+text-align:center;
+}
+
+/* title */
+
+.signup-form h2{
+color:#e0e1dd;
+margin-bottom:25px;
+}
+
+/* form layout */
+
+.signup-form form{
+display:flex;
+flex-direction:column;
+gap:12px;
+text-align:left;
+}
+
+/* labels */
+
+.signup-form label{
+color:#e0e1dd;
+font-size:14px;
+font-weight:500;
+}
+
+/* inputs */
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"]{
+padding:10px;
+border-radius:6px;
+border:none;
+outline:none;
+background:#e0e1dd;
+color:#1b263b;
+font-size:14px;
+}
+
+/* focus effect */
+
+.signup-form input:focus{
+box-shadow:0 0 0 2px #778da9;
+}
+
+/* radio buttons */
+
+.signup-form input[type="radio"]{
+margin-right:2px;
+}
+
+.signup-form button{
+margin-top:15px;
+padding:10px;
+border:none;
+border-radius:6px;
+background:#415a77;
+color:#e0e1dd;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.signup-form button:hover{
+background:#778da9;
+}
+
+/* login link */
+
+.signup-form p{
+margin-top:20px;
+text-align:center;
+color:#e0e1dd;
+}
+
+.signup-form a{
+color:#778da9;
+text-decoration:none;
+font-weight:600;
+}
+
+.signup-form a:hover{
+text-decoration:underline;
+}
+
