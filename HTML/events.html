@@ -33,14 +33,14 @@
 
  <section class="upcomingevents">
     <div class="event-container">
-    <h2>Upcoming Events</h2>
+    <h2 data-i18n="events.title">Upcoming Events</h2>
 <p>Discover workshops, seminars, and networking opportunities happening on campus.</p>
 
 <div class="event-filters">
-  <button class="filter-btn" data-category="all">All</button>
-  <button class="filter-btn" data-category="seminar">Seminars</button>
-  <button class="filter-btn" data-category="workshop">Workshops</button>
-  <button class="filter-btn" data-category="meetup">Meetups</button>
+  <button class="filter-btn" data-category="all" data-i18n="events.all">All</button>
+  <button class="filter-btn" data-category="seminar" data-i18n="events.seminars">Seminars</button>
+  <button class="filter-btn" data-category="workshop" data-i18n="events.workshops">Workshops</button>
+  <button class="filter-btn" data-category="meetup" data-i18n="events.meetups">Meetups</button>
 </div>
 
 <div class="events-grid">
@@ -124,7 +124,9 @@
 
     </footer>
 <script src="../Js/events.js"></script>
-
+<button id="themeToggle" title="Toggle theme">🌙</button>
+<button id="langToggle" title="Switch language">EN</button>
+<script src="../Js/features.js"></script>
 
 </body>
 </html>

@@ -220,3 +220,173 @@ a.category-item:active
   transform: scale(0.95);
   opacity: 0.8;
 }
+
+
+/* ============================================================
+   FEATURE: LIGHT MODE
+   ============================================================ */
+body.light-mode {
+  background: #f0f4f8;
+  color: #1b263b;
+}
+
+body.light-mode header {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+body.light-mode header h1 { color: #1b263b; }
+body.light-mode nav a { color: #1b263b; }
+body.light-mode nav a::after { background: #415a77; }
+
+body.light-mode .login a {
+  border-color: #415a77;
+  color: #415a77;
+}
+
+body.light-mode .sign-up a {
+  background: #415a77;
+  color: #fff;
+}
+
+body.light-mode footer {
+  background: #dce6f0;
+  color: #1b263b;
+}
+
+body.light-mode footer a { color: #415a77; }
+body.light-mode footer p { color: #415a77; }
+
+body.light-mode .eventcard {
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+body.light-mode .eventcard h3,
+body.light-mode .eventcard p { color: #1b263b; }
+
+/* ============================================================
+   FEATURE: THEME TOGGLE BUTTON
+   ============================================================ */
+#themeToggle {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: #415a77;
+  color: #e0e1dd;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: background 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#themeToggle:hover {
+  background: #778da9;
+  transform: scale(1.1) rotate(15deg);
+}
+
+/* ============================================================
+   FEATURE: LANGUAGE TOGGLE BUTTON
+   ============================================================ */
+#langToggle {
+  position: fixed;
+  bottom: 86px;
+  left: 30px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: #1b263b;
+  color: #e0e1dd;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#langToggle:hover {
+  background: #415a77;
+  transform: scale(1.1);
+}
+
+/* ============================================================
+   FEATURE: RTL ARABIC SUPPORT
+   ============================================================ */
+body[dir="rtl"] {
+  font-family: 'Cairo', 'Poppins', sans-serif;
+}
+
+body[dir="rtl"] header { flex-direction: row-reverse; }
+body[dir="rtl"] nav ul  { flex-direction: row-reverse; }
+body[dir="rtl"] footer  { flex-direction: row-reverse; }
+body[dir="rtl"] .eventcard { text-align: right; }
+
+body[dir="rtl"] #themeToggle { left: auto; right: 30px; }
+body[dir="rtl"] #langToggle  { left: auto; right: 30px; }
+body[dir="rtl"] #backToTop   { right: auto; left: 30px; }
+
+/* ============================================================
+   FEATURE: CARD ANIMATIONS — shine sweep + image zoom
+   ============================================================ */
+.eventcard {
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Shine sweep on hover */
+.eventcard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.1) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  transform: skewX(-20deg);
+  transition: left 0.55s ease;
+  pointer-events: none;
+}
+
+.eventcard:hover::after { left: 130%; }
+
+/* Image zoom on hover */
+.eventcard img {
+  transition: transform 0.4s ease;
+}
+
+.eventcard:hover img { transform: scale(1.06); }
+
+/* ============================================================
+   FEATURE: SMOOTH PAGE TRANSITIONS
+   ============================================================ */
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+main { animation: pageFadeIn 0.4s ease forwards; }
+
+body.page-exit {
+  animation: pageFadeOut 0.3s ease forwards;
+}
+
+@keyframes pageFadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; transform: translateY(-8px); }
+}
